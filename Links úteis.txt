@@ -9,3 +9,26 @@ https://medium.com/@junwan01/oversampling-and-undersampling-with-pyspark-5dbc25c
 
 
 https://mingchen0919.github.io/learning-apache-spark/index.html
+
+
+
+
+**Links de Referência**:
+
+* https://spark.apache.org/docs/3.1.1/api/python/reference/api/pyspark.sql.DataFrame.html
+* https://sparkbyexamples.com/pyspark/pyspark-structtype-and-structfield/
+* https://sparkbyexamples.com/pyspark/pyspark-map-transformation/
+
+---
+
+* https://spark.apache.org/docs/latest/ml-pipeline.html
+* https://github.com/Krupique/Explorating-Data/blob/main/PreProcessamento-Medium/PreProcessamento.ipynb
+* https://spark.apache.org/docs/latest/sql-data-sources-load-save-functions.html
+
+* https://www.databricks.com/wp-content/uploads/hubfs/notebooks/spark2.0/ML%20persistence%20in%202.0.html
+
+
+métricas
+https://imasters.com.br/desenvolvimento/machine-learning-metricas-para-modelos-de-classificacao
+
+

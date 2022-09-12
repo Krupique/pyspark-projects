@@ -1,1 +1,1 @@
-{"class":"org.apache.spark.ml.PipelineModel","timestamp":1662726554353,"sparkVersion":"3.0.3","uid":"PipelineModel_2920f51feb47","paramMap":{"stageUids":["RobustScaler_13f7d9f344f2","GBTClassifier_b49daa7cf867"]},"defaultParamMap":{}}
+{"class":"pyspark.ml.pipeline.PipelineModel","timestamp":1662991495634,"sparkVersion":"3.0.3","uid":"PipelineModel_95de7cf0882f","paramMap":{"stageUids":["RobustScaler_35b5f2837703","CrossValidatorModel_e9ecc9b6825a"],"language":"Python"},"defaultParamMap":{}}
