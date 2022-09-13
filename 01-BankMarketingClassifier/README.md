@@ -12,7 +12,7 @@ A aplicação de modelos preditivos permite identificar quais são os clientes m
 
 Uma forma de construir modelos preditivos é através de programação utilizando a combinação de Python com o framework Spark, denominado PySpark. O uso dessa ferramenta é bastante relevante, dado que o volume de dados em instituições financeiras é bastante alto (Big Data) e o PySpark suporta muito bem a escalabilidade desses dados.
 
-Com a utilização do PySpark, este projeto se propõe ao desenvolvimento de uma modelo de Machine Learning que com base nos dados históricos, seja capaz de predizer se o cliente vai ou não adquirir o empréstimo no banco. O projeto percorre por todas as etapas de uma modelagem e no final será desenvolvido um modelo pronto para ser exportando para outros ambientes, como o ambiente em nuvem da Amazon, por exemplo.
+Com a utilização do PySpark e MLlib, este projeto se propõe ao desenvolvimento de uma modelo de Machine Learning que com base nos dados históricos, seja capaz de predizer se o cliente vai ou não adquirir o empréstimo no banco. O projeto percorre por todas as etapas de uma modelagem e no final será desenvolvido um modelo pronto para ser exportando para outros ambientes, como o ambiente em nuvem da Amazon, por exemplo.
 
 ---
 
