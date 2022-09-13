@@ -266,7 +266,7 @@ type(rdd)
 O Spark utiliza o conceito de RDDs para aplicar o MapReduce de maneira rápida. Por padrão, os RDDs são computados cada vez que executamos uma ação. Entretanto, podemos “persistir” o RDD na memória (ou mesmo no disco) de modo que os dados estejam disponíveis ao longo do cluster e possam ser processados de forma muito mais rápida pelas operações de análise de dados.
 O RDD suporta dois tipos de operações:
 
-<img src="resources/tabela01.png"/>
+<img src="resources/tabela01.PNG"/>
 
 Cada transformação gera um novo RDD, pois os RDDs são imutáveis. As ações aplicam as transformações nos RDDs e retornam o resultado.
 
