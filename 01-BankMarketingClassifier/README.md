@@ -2100,34 +2100,34 @@ Henrique K.
 
 <h3 id="id_6.3">6.3) Referências</h3>
 
-* O que é marketing?. *Resultados Digitais*. 2020. Disponível em: [o que é marketing](https://resultadosdigitais.com.br/o-que-e-marketing/)
+[1] BALDISSERA, Olívia. *4 benefícios do machine learning no marketing. Quantos você conhece?*. 2021. Disponível em: [4 benefícios de ML no marketing](https://posdigital.pucpr.br/blog/machine-learning-no-marketing)
 
 
-* BALDISSERA, Olívia. *4 benefícios do machine learning no marketing. Quantos você conhece?*. 2021. Disponível em: [4 benefícios de ML no marketing](https://posdigital.pucpr.br/blog/machine-learning-no-marketing)
+[2] DePINO, Frank. *Modern Bank Marketing – A Comprehensive Guide*. 2021. Disponível em: [Modern Bank Marketing](https://mediaboom.com/news/bank-marketing/#:~:text=Bank%20marketing%20is%20the%20practice,attracted%20to%20a%20certain%20institutions.)
 
 
-* KRUPCK, Henrique. *Marketing Analytics em Python*. 2022. Disponível em: [Marketing Analytics](https://github.com/Krupique/challenges-kaggle/tree/main/challenges/13_MarketingAnalytics)
+[3] ERSOY, Pinar. *Types of Samplings in PySpark 3*. 2020. Disponível em: [Types of Samplings](https://towardsdatascience.com/types-of-samplings-in-pyspark-3-16afc64c95d4)
 
 
-* LIV. *Machine learning in banking and marketing applications for 2021 and beyond*. 2020. Disponível em [Machine learning in banking and marketing](https://roboticsandautomationnews.com/2020/11/16/machine-learning-in-banking-and-marketing-applications-for-2021-and-beyond/38220/)
+[4] KRUPCK, Henrique. *Marketing Analytics em Python*. 2022. Disponível em: [Marketing Analytics](https://github.com/Krupique/challenges-kaggle/tree/main/challenges/13_MarketingAnalytics)
 
 
-* XP EDUCAÇÃO. *Spark: entenda sua função e saiba mais sobre essa ferramenta*. 2022. Disponível em: [Saiba como funciona o Apache Spark](https://blog.xpeducacao.com.br/apache-spark/)
+[5] LIV. *Machine learning in banking and marketing applications for 2021 and beyond*. 2020. Disponível em [Machine learning in banking and marketing](https://roboticsandautomationnews.com/2020/11/16/machine-learning-in-banking-and-marketing-applications-for-2021-and-beyond/38220/)
 
 
-* DePINO, Frank. *Modern Bank Marketing – A Comprehensive Guide*. 2021. Disponível em: [Modern Bank Marketing](https://mediaboom.com/news/bank-marketing/#:~:text=Bank%20marketing%20is%20the%20practice,attracted%20to%20a%20certain%20institutions.)
+[6] ML Pipelines. *Machine Learning Pipelines with MLlib*. Disponível em: (ML Pipelines)[https://spark.apache.org/docs/latest/ml-pipeline.html]
 
 
-* SCHADE, Gabriel. *Machine Learning: métricas para Modelos de Classificação*. 2019. Disponível em: [Métricas de Avaliação](https://imasters.com.br/desenvolvimento/machine-learning-metricas-para-modelos-de-classificacao)
+[7] O que é marketing?. *Resultados Digitais*. 2020. Disponível em: [o que é marketing](https://resultadosdigitais.com.br/o-que-e-marketing/)
 
 
-* ML Pipelines. *Machine Learning Pipelines with MLlib*. Disponível em: (ML Pipelines)[https://spark.apache.org/docs/latest/ml-pipeline.html]
+[8] SCHADE, Gabriel. *Machine Learning: métricas para Modelos de Classificação*. 2019. Disponível em: [Métricas de Avaliação](https://imasters.com.br/desenvolvimento/machine-learning-metricas-para-modelos-de-classificacao)
 
 
-* WAN, Jun. *Oversampling and Undersampling with PySpark*. 2020. Disponível em: [Oversampling and Undersampling](https://medium.com/@junwan01/oversampling-and-undersampling-with-pyspark-5dbc25cdf253)
+[9] WAN, Jun. *Oversampling and Undersampling with PySpark*. 2020. Disponível em: [Oversampling and Undersampling](https://medium.com/@junwan01/oversampling-and-undersampling-with-pyspark-5dbc25cdf253)
 
 
-* ERSOY, Pinar. *Types of Samplings in PySpark 3*. 2020. Disponível em: [Types of Samplings](https://towardsdatascience.com/types-of-samplings-in-pyspark-3-16afc64c95d4)
+[10] XP EDUCAÇÃO. *Spark: entenda sua função e saiba mais sobre essa ferramenta*. 2022. Disponível em: [Saiba como funciona o Apache Spark](https://blog.xpeducacao.com.br/apache-spark/)
 
 ---
 
