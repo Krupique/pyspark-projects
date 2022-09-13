@@ -14,6 +14,8 @@ Uma forma de construir modelos preditivos é através de programação utilizand
 
 Com a utilização do PySpark e MLlib, este projeto se propõe ao desenvolvimento de uma modelo de Machine Learning que com base nos dados históricos, seja capaz de predizer se o cliente vai ou não adquirir o empréstimo no banco. O projeto percorre por todas as etapas de uma modelagem e no final será desenvolvido um modelo pronto para ser exportando para outros ambientes, como o ambiente em nuvem da Amazon, por exemplo.
 
+Repositório: <a target="_blank" href="https://github.com/Krupique/pyspark-projects/edit/main/01-BankMarketingClassifier">github.com/BankMarketingClassifier</a>
+
 ---
 
 <h2>SUMÁRIO</h2>
@@ -127,28 +129,28 @@ O dataset pode ser obtido no site do Kaggle, clicando [aqui](https://www.kaggle.
 > **Nota**: Eu alterei alguns registros do dataset para forçar a situação de dados missing/nulos. Para que dessa forma eu consiga desenvolver e detalhar a etapa de tratamento de valores NA.
 
 Atributos do Dataset:
-* AGE: Idade do indivíduo.
-* JOB: Emprego.
-* MARITAL: Status de estado civil: ('casado', 'solteiro', 'divorciado').
-* EDUCATION: Nível de escolaridade
-* DEFAULT: Se possui crédito inadimplente.
-* HOUSING: Possui credito à habitação.
-* LOAN: Se possui empréstimo.
-* CONTACT: Tipo de contato: ('Telefone' ou 'Smartphone').
-* MONTH: Mês do ano.
-* DAY OF WEEK: Dia da semana.
-* CAMPAIGN: Quantidade de contatos realizados durante esta campanha e para este cliente.
-* PDAYS: Quantidade de dias que se passaram depois que o cliente foi contatado pela última vez em uma campanha anterior.
-* PREVIOUS: Quantidade de contatos realizados antes desta campanha e para este cliente.
-* POUTCOME: Resultado da campanha de marketing anterior ('fracasso', 'inexistente', 'sucesso').
-* EMP.VAR.RATE: Taxa de variação do emprego - indicador trimestral.
-* CONS.PRICE.IDX: Índice de preços ao consumidor - indicador mensal.
-* CONS.CONF.IDX: Índice de confiança do consumidor - indicador mensal.
-* EURIBOR3M: Taxa de 3 meses euribor - indicador diário.
-* NR.EMPLOYED: Número de funcionários - indicador trimestral.
+* AGE: Idade do indivíduo.<br/>
+* JOB: Emprego.<br/>
+* MARITAL: Status de estado civil: ('casado', 'solteiro', 'divorciado').<br/>
+* EDUCATION: Nível de escolaridade<br/>
+* DEFAULT: Se possui crédito inadimplente.<br/>
+* HOUSING: Possui credito à habitação.<br/>
+* LOAN: Se possui empréstimo.<br/>
+* CONTACT: Tipo de contato: ('Telefone' ou 'Smartphone').<br/>
+* MONTH: Mês do ano.<br/>
+* DAY OF WEEK: Dia da semana.<br/>
+* CAMPAIGN: Quantidade de contatos realizados durante esta campanha e para este cliente.<br/>
+* PDAYS: Quantidade de dias que se passaram depois que o cliente foi contatado pela última vez em uma campanha anterior.<br/>
+* PREVIOUS: Quantidade de contatos realizados antes desta campanha e para este cliente.<br/>
+* POUTCOME: Resultado da campanha de marketing anterior ('fracasso', 'inexistente', 'sucesso').<br/>
+* EMP.VAR.RATE: Taxa de variação do emprego - indicador trimestral.<br/>
+* CONS.PRICE.IDX: Índice de preços ao consumidor - indicador mensal.<br/>
+* CONS.CONF.IDX: Índice de confiança do consumidor - indicador mensal.<br/>
+* EURIBOR3M: Taxa de 3 meses euribor - indicador diário.<br/>
+* NR.EMPLOYED: Número de funcionários - indicador trimestral.<br/>
 
 
-* Y: Variável alvo. Verifica se o cliente adquiriu o empréstimo.
+* Y: Variável alvo. Verifica se o cliente adquiriu o empréstimo.<br/>
 
 ---
 
@@ -272,17 +274,17 @@ Cada transformação gera um novo RDD, pois os RDDs são imutáveis. As ações 
 
 **Características dos RDDs**:
 
-* Spark é baseado em RDDs. Criamos, transformamos e armazenamos RDDs em Spark;
-* RDD representa uma coleção de elementos de dados particionados que podem ser operados em paralelo.
-* RDDs são objetos imutáveis. Eles não podem ser alterados uma vez criados.
-* RDDs podem ser colocados em cache e permitem persistência (mesmo objeto usado entre sessões diferentes).
-* Ao aplicarmos Transformações em RDDs criamos novos RDDs.
-* Ações aplicam as transformações nos RDDs e geram um resultado.
+* Spark é baseado em RDDs. Criamos, transformamos e armazenamos RDDs em Spark;<br/>
+* RDD representa uma coleção de elementos de dados particionados que podem ser operados em paralelo.<br/>
+* RDDs são objetos imutáveis. Eles não podem ser alterados uma vez criados.<br/>
+* RDDs podem ser colocados em cache e permitem persistência (mesmo objeto usado entre sessões diferentes).<br/>
+* Ao aplicarmos Transformações em RDDs criamos novos RDDs.<br/>
+* Ações aplicam as transformações nos RDDs e geram um resultado.<br/>
 
 **Existem dois tipos de transformações:**
 
-* *Narrow*: Resultado de funções como map() e filter() e os dados vem de uma única partição.
-* *Wide*: Resultado de funções como groupByKey() e os dados podem vir de diversas partições.
+* *Narrow*: Resultado de funções como map() e filter() e os dados vem de uma única partição.<br/>
+* *Wide*: Resultado de funções como groupByKey() e os dados podem vir de diversas partições.<br/>
 
 
 ```python
@@ -453,12 +455,12 @@ for column in list_columns:
 <h3 id="id_2.3">2.3) Tratamento de Valores Ausentes</h3>
 
 Colunas que apresentaram valores ausentes:
-* MARITAL
-* DEFAULT
-* HOUSING
-* DAY_OF_WEEK
-* POUTCOME
-* CONS_PRICE_IDX
+* MARITAL<br/>
+* DEFAULT<br/>
+* HOUSING<br/>
+* DAY_OF_WEEK<br/>
+* POUTCOME<br/>
+* CONS_PRICE_IDX<br/>
 
 > Vários registros em várias colunas possuem o valor `unknown` em português (desconhecido). Porém, eu irei considerar estes valores como corretos e não vou fazer nenhum tratamento para estes dados.
 
@@ -1754,8 +1756,8 @@ A resposta é sim. Em computação não é possível somente ganhar, sempre quan
 <h3 id="id_3.8">3.7) Feature Selection</h3>
 
 O processo de Feature Selection é o processo de seleção de variáveis que são relevantes para o modelo de machine learning. A seleção de variáveis tem como objetivo reduzir a dimensão dos dados de entrada, através da identificação das variáveis que são mais interessantes para o modelo e descartando as menos interessantes. Isso é importante por vários aspectos:
-* Simplificação do modelo: Aquele ditado "Menos é mais" é muito verdadeiro quando falamos de modelos de Machine Learning. Afinal, quanto mais simples for o modelo, melhor será a performance, manutenção e entendimento.
-* Economia de tempo e recursos: Imagina treinar um modelo com centenas de variáveis. Isso pode se tornar algo extramamente inviável, dado o tempo que poderia levar, além dos recursos computacionais demandados para tal tarefa.
+* Simplificação do modelo: Aquele ditado "Menos é mais" é muito verdadeiro quando falamos de modelos de Machine Learning. Afinal, quanto mais simples for o modelo, melhor será a performance, manutenção e entendimento.<br/>
+* Economia de tempo e recursos: Imagina treinar um modelo com centenas de variáveis. Isso pode se tornar algo extramamente inviável, dado o tempo que poderia levar, além dos recursos computacionais demandados para tal tarefa.<br/>
 
 Para selecionar os atributos mais relevantes eu optei por utilizar o modelo de Random Forest. Nesse caso eu não estou preocupado com realizar previsões, mas sim, em selecionar os atributos que obtiverem maior pontuação. E com isso, selecioná-los para o modelo final.
 
@@ -2087,8 +2089,8 @@ Fiz questão de detalhar ao máximo todas as técnicas e conceitos envolvidos pa
 
 Para quem chegou até aqui, muito obrigado por acompanhar este conteúdo. Me coloco a disposição para esclarecer eventuais dúvidas. Segue o contato das minhas redes:
 
-* Email: <a href="mailto:krupck@outlook.com">krupck@outlook.com</a>
-* Linkedin: <a href="https://www.linkedin.com/in/henrique-krupck/">henrique-krupck</a>
+* Email: <a href="mailto:krupck@outlook.com">krupck@outlook.com</a><br/>
+* Linkedin: <a href="https://www.linkedin.com/in/henrique-krupck/">henrique-krupck</a><br/>
 
 At.te,
 
