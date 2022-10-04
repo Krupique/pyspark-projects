@@ -17,7 +17,7 @@ api_key = config['twitter']['api_key']
 api_key_secret = config['twitter']['api_key_secret']
 access_token = config['twitter']['access_token']
 access_token_secret = config['twitter']['access_token_secret']
-bearer_token = config['twitter']['bearer_token']
+bearer_token = ###bt
 
 # Gainaing access and connecting to Twitter API using Credentials
 client = tweepy.Client(bearer_token, api_key, api_key_secret, access_token, access_token_secret)
@@ -25,7 +25,7 @@ client = tweepy.Client(bearer_token, api_key, api_key_secret, access_token, acce
 auth = tweepy.OAuth1UserHandler(api_key, api_key_secret, access_token, access_token_secret)
 api = tweepy.API(auth)
 
-search_terms = ["cat", "dog"]
+search_terms = ["cat has:videos", 'dog has:videos', 'horse has:videos']
 
 lst_text = []
 # Bot searches for tweets containing certain keywords
@@ -67,6 +67,7 @@ def sendData(c_socket):
     # Starting stream
     stream.filter(tweet_fields=["text"])
 
+
 def bearer_oauth(r):
     """
     Method required by bearer token authentication.
@@ -75,6 +76,7 @@ def bearer_oauth(r):
     r.headers["Authorization"] = f"Bearer {bearer_token}"
     r.headers["User-Agent"] = "v2FilteredStreamPython"
     return r
+
 
 def get_rules():
     response = requests.get(
@@ -87,6 +89,7 @@ def get_rules():
     print('Get rules')
     print(json.dumps(response.json()))
     return response.json()
+
 
 def delete_all_rules(rules):
     if rules is None or "data" not in rules:
@@ -112,7 +115,7 @@ def delete_all_rules(rules):
 
 if __name__ == "__main__":
     s = socket.socket()         # Create a socket object
-    host = "127.0.0.1"     # Get local machine name
+    host = "127.0.0.1"          # Get local machine name
     port = 5554                 # Reserve a port for your service.
     s.bind((host, port))        # Bind to the port
 
