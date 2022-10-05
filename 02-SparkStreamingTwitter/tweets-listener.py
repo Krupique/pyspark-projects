@@ -17,7 +17,7 @@ api_key = config['twitter']['api_key']
 api_key_secret = config['twitter']['api_key_secret']
 access_token = config['twitter']['access_token']
 access_token_secret = config['twitter']['access_token_secret']
-bearer_token = ###bt
+bearer_token = r'AAAAAAAAAAAAAAAAAAAAAHY5hgEAAAAArW3fPAPtl8cy2jpDdH6z8Ky14vE%3DL6Ysu5eGYLvkEWfTblTh3x5UDcBdQRJgedPIVTpYdxqs0aFnSM'
 
 # Gainaing access and connecting to Twitter API using Credentials
 client = tweepy.Client(bearer_token, api_key, api_key_secret, access_token, access_token_secret)
@@ -37,16 +37,9 @@ class MyStream(tweepy.StreamingClient):
     def on_data(self, tweet):
         try:
             tweet = json.loads(tweet.decode('utf-8'))
-
             text = tweet['data']['text']
 
-        
-            #res = re.search(r'(?<=https).*',text)
-            #if res != None:
-            #    res = 'http' + res.group()
-            #    print(res)
             print(text)
-
             self.client_socket.send( text.encode('utf-8') )
 
             return True
@@ -128,6 +121,6 @@ if __name__ == "__main__":
     rules = get_rules()
     delete = delete_all_rules(rules)
 
-    print( "Received request from: " + str( addr ) )
+    print("Received request from: " + str(addr))
 
-    sendData( c )
+    sendData(c)
