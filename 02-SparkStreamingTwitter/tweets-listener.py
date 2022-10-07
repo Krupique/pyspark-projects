@@ -23,9 +23,9 @@ bearer_token = r'AAAAAAAAAAAAAAAAAAAAAHY5hgEAAAAArW3fPAPtl8cy2jpDdH6z8Ky14vE%3DL
 client = tweepy.Client(bearer_token, api_key, api_key_secret, access_token, access_token_secret)
 
 auth = tweepy.OAuth1UserHandler(api_key, api_key_secret, access_token, access_token_secret)
-api = tweepy.API(auth)
+api = tweepy.API(auth, wait_on_rate_limit=True)
 
-search_terms = ["cat has:videos", 'dog has:videos', 'horse has:videos']
+search_terms = ["cat has:videos", 'dog has:videos']
 
 lst_text = []
 # Bot searches for tweets containing certain keywords
