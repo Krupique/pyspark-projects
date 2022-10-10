@@ -17,7 +17,7 @@ api_key = config['twitter']['api_key']
 api_key_secret = config['twitter']['api_key_secret']
 access_token = config['twitter']['access_token']
 access_token_secret = config['twitter']['access_token_secret']
-bearer_token = r'AAAAAAAAAAAAAAAAAAAAAHY5hgEAAAAArW3fPAPtl8cy2jpDdH6z8Ky14vE%3DL6Ysu5eGYLvkEWfTblTh3x5UDcBdQRJgedPIVTpYdxqs0aFnSM'
+bearer_token = r'AAAAAAAAAAAAAAAAAAAAAHY5hgEAAAAA2FSk9Qi3r1OKDdlXRzhkzox9InI%3DR3U3eL0OI5G8ka9GO1OlXtrZnvfuktbrEJozzVwPz1LssHYWcG'
 
 # Gainaing access and connecting to Twitter API using Credentials
 client = tweepy.Client(bearer_token, api_key, api_key_secret, access_token, access_token_secret)
@@ -25,7 +25,7 @@ client = tweepy.Client(bearer_token, api_key, api_key_secret, access_token, acce
 auth = tweepy.OAuth1UserHandler(api_key, api_key_secret, access_token, access_token_secret)
 api = tweepy.API(auth, wait_on_rate_limit=True)
 
-search_terms = ["cat has:videos", 'dog has:videos']
+search_terms = ["russia", 'war', 'putin']
 
 lst_text = []
 # Bot searches for tweets containing certain keywords
