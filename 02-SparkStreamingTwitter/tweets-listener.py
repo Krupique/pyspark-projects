@@ -21,7 +21,7 @@ access_token_secret = config['twitter']['access_token_secret']
 # O bearer token da erro no arquivo config. Portanto, eu inseri direto aqui.
 bearer_token = r'AAAAAAAAAAAAAAAAAAAAAHY5hgEAAAAA2FSk9Qi3r1OKDdlXRzhkzox9InI%3DR3U3eL0OI5G8ka9GO1OlXtrZnvfuktbrEJozzVwPz1LssHYWcG'
 
-# Obtendo acesso e conectando-se à API do Twitter usando credenciais
+# Obtendo acesso e conectando a API do Twitter usando credenciais
 client = tweepy.Client(bearer_token, api_key, api_key_secret, access_token, access_token_secret)
 
 # Realizando autenticação
